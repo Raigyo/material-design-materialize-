@@ -1,6 +1,6 @@
 # Material Design - Materialize CSS
 
-December 2020
+*December 2020 / January 2021*
 
 > 🔨  From Udemy [Materialize CSS - Apprendre à créer des sites en Material Design](https://www.udemy.com/course/materialize-css/).
 
@@ -18,9 +18,11 @@ It is inspired from Google Material Design.
     <img src="_readme-img/materialize-logo.png">
 </h1>
 
-## Overview
+## Demos
 
-### CSS
+## [Subjects covered](./overview)
+
+### [CSS](./overview/01-css)
 
 - Typography
 - Colors
@@ -30,11 +32,35 @@ It is inspired from Google Material Design.
 - Effects
 - Tables
 
-### Components
+### [Components](./overview/02-components)
 
-### Javascript
+- Buttons
+- Icons
+- FloatingBtn
+- Cards
+- Collections
+- Navbars
+- Preloader
+- Footer
 
-### Forms
+### [Javascript](./overview/03-javascript)
+
+- Carousel
+- Accordion
+- DropDown
+- Discovery
+- Modales
+- Parallax
+- ScrollSpy
+- Toast&ToolTips
+- Waves
+
+### [Forms](./overview/04-forms)
+
+- Auto Complete
+- Range, boxes, radio
+- Select, switches
+- Inputs
 
 ## Useful links
 
