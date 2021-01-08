@@ -14,97 +14,82 @@
 </head>
 <body>
 
-    <h1 class="center-align">CSS</h1>
-    <h3 class="center-align">Navbars</h3>
-
-  <br>
-  <br>
+  <h1 class="center-align">Components</h1>
+  <h3 class="center-align">Navbars</h3>
 
   <div class="container">
-      <div class="row">
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;" href="01-buttons.html">Buttons</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="02-icons.html">Icons</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="03-floating-btn.html">FloatingBtn</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="04-cards.html">Cards</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="05-collections.html">Collections</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="06-navbars.html">Navbars</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="07-preloader.html">Preloader</a></div>
-        <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="08-footer.html">Footer</a></div>
-      </div>
+    <div class="row">
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;" href="01-buttons.html">Buttons</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="02-icons.html">Icons</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="03-floating-btn.html">FloatingBtn</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="04-cards.html">Cards</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="05-collections.html">Collections</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="06-navbars.html">Navbars</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="07-preloader.html">Preloader</a></div>
+      <div class="col s12 m6 l3"><a class="waves-effect waves-light btn blue lighten-2" style="width: 100%; margin-bottom: 5px;"  href="08-footer.html">Footer</a></div>
+    </div>
   </div>
-<hr>
+  <hr>
 
-<div class="container">
+  <div class="container">
 
-  <br><br>
-  <h5>Les barres de Navigations(navbars) : </h5>
-  <br><br>
+    <br><br>
+    <h5>Navigations bars (navbars):</h5>
+    <br><br>
 
-  <p>La navbar de base, logo à gauche, liens à droite.</p>
-  <!-- Pour inverser liens et logo, inversez seulement right et left. -->
-  <!-- Pour mettre l'accent sur un item de la liste, rajoutez la classe "active" à cette li -->
-  <!-- Pour une navbar fixée, rajouter la classe navbar-fixed à la div qui englobe le tout. -->
+    <p>The basic navbar, logo on the left, links on the right.</p>
+    <!-- To reverse links and logo, reverse only right and left. -->
+    <!-- To emphasize an item in the list, add the "active" class to this li -->
+    <!-- For a fixed navbar, add the navbar-fixed class to the div that includes everything. -->
 
-  <!-- Fixed navbar -->
-  <!-- <div class="navbar-fixed"> -->
+    <!-- Fixed navbar -->
+    <!-- <div class="navbar-fixed"> -->
+      <nav>
+        <div class="nav-wrapper blue">
+          <a href="#!" class="left brand-logo">Logo</a>
+          <ul class="right">
+            <li><a href="#!"></a>Link 1</li>
+            <li class="active"><a href="#!"></a>Link 2</li>
+            <li><a href="#!"></a>Link 3</li>
+          </ul>
+        </div>
+      </nav>
+    <!-- </div> -->
+
+    <h5>Make a breadcrumb trail: </h5>
     <nav>
-      <div class="nav-wrapper blue">
-        <a href="#!" class="left brand-logo">Logo</a>
-        <ul class="right">
-          <li><a href="#!"></a>Lien 1</li>
-          <li class="active"><a href="#!"></a>Lien 2</li>
-          <li><a href="#!"></a>Lien 3</li>
+      <div class="nav-wrapper indigo">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb">Third</a>
+      </div>
+    </nav>
+
+    <h5>Navbar that adapts to screens: </h5>
+    <nav>
+      <div class="nav-wrapper orange">
+        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#!"></a>Link 1</li>
+          <li><a href="#!"></a>Link 2</li>
+          <li><a href="#!"></a>Link 3</li>
+          <li><a href="#!"></a>Link 4</li>
         </ul>
       </div>
     </nav>
-  <!-- </div> -->
 
-  <br><br>
-  <h5>Faire un fil d'ariane : </h5>
-  <br><br>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#!"></a>Link 1</li>
+      <li><a href="#!"></a>Link 2</li>
+      <li><a href="#!"></a>Link 3</li>
+      <li><a href="#!"></a>Link 4</li>
+    </ul>
+  </div>
 
-  <nav>
-    <div class="nav-wrapper indigo">
-      <a href="#!" class="breadcrumb">First</a>
-      <a href="#!" class="breadcrumb">Second</a>
-      <a href="#!" class="breadcrumb">Third</a>
-    </div>
-  </nav>
-
-
-
-  <br><br>
-  <h5>Navbar qui s'adapte aux écrans : </h5>
-  <br><br>
-
-  <nav>
-    <div class="nav-wrapper orange">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#!"></a>Link 1</li>
-        <li><a href="#!"></a>Link 2</li>
-        <li><a href="#!"></a>Link 3</li>
-        <li><a href="#!"></a>Link 4</li>
-      </ul>
-    </div>
-  </nav>
-
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#!"></a>Link 1</li>
-    <li><a href="#!"></a>Link 2</li>
-    <li><a href="#!"></a>Link 3</li>
-    <li><a href="#!"></a>Link 4</li>
-  </ul>
-
-
-
-  <br><br><br><br><br>
-</div>
-
-<script>
-  M.AutoInit();
-</script>
+  <script>
+    M.AutoInit();
+  </script>
 
 </body>
 </html>

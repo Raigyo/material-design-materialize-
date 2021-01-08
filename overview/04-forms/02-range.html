@@ -36,86 +36,77 @@
 
 </head>
 <body>
-    <h1 class="center-align">Forms</h1>
-    <h3 class="center-align">Range, Boxes, radio</h3>
+  <h1 class="center-align">Forms</h1>
+  <h3 class="center-align">Range, Boxes, radio</h3>
 
-    <br>
-    <br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;" href="01-autocomplete.html">AutoComplete</a></div>
-            <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;"  href="02-range.html">Range, Boxes, radio</a></div>
-            <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;"  href="03-select.html">Select, switches</a></div>
-            <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;"  href="04-inputs.html">Inputs</a></div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;" href="01-autocomplete.html">AutoComplete</a></div>
+      <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;"  href="02-range.html">Range, Boxes, radio</a></div>
+      <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;"  href="03-select.html">Select, switches</a></div>
+      <div class="col s12 m6 l3"><a class="purple white-text darken-2 black-text waves-effect waves-light btn" style="width: 100%; margin-bottom: 5px;"  href="04-inputs.html">Inputs</a></div>
     </div>
-<hr>
+  </div>
+  <hr>
 
-<div class="container">
-
-
-  <br><br>
-  <h5>Choose on a range, a checkbox, radio buttons: </h5>
-  <br><br>
-  <form id="myForm">
-    <!-- Range -->
-    <p class="range-field">
-      <input type="range" id="range1" min="0" max="100" />
-    </p>
-    <!-- Checkbox -->
-    <label>
-      <input type="checkbox" name="check" />
-      <span>Check me</span>
-    </label>
-    <h5>Choose a color</h5>
-    <!-- Radio -->
-    <p>
+  <div class="container">
+    <h5>Choose on a range, a checkbox, radio buttons: </h5>
+    <form id="myForm">
+      <!-- Range -->
+      <p class="range-field">
+        <input type="range" id="range1" min="0" max="100" />
+      </p>
+      <!-- Checkbox -->
       <label>
-        <input type="radio" name="group1" value="red" checked />
-        <span>Red</span>
+        <input type="checkbox" name="check" />
+        <span>Check me</span>
       </label>
-    </p>
-    <p>
-      <label>
-        <input type="radio" name="group1" value="blue" />
-        <span>Blue</span>
-      </label>
-    </p>
-    <p>
-      <label>
-        <input type="radio" name="group1" value="yellow" />
-        <span>Yellow</span>
-      </label>
-    </p>
-    <button class="btn waves-effect waves-light" type="submit" name="action">
-      Submit<i class="material-icons right">send</i>
-    </button>
-  </form>
+      <h5>Choose a color</h5>
+      <!-- Radio -->
+      <p>
+        <label>
+          <input type="radio" name="group1" value="red" checked />
+          <span>Red</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="radio" name="group1" value="blue" />
+          <span>Blue</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="radio" name="group1" value="yellow" />
+          <span>Yellow</span>
+        </label>
+      </p>
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        Submit<i class="material-icons right">send</i>
+      </button>
+    </form>
 
-  <div class="box">
-    <div><strong>Log:</strong></div>
-    <div class="log"></div>
+    <div class="box">
+      <div><strong>Log:</strong></div>
+      <div class="log"></div>
+    </div>
   </div>
 
-</div>
+  <script>
+    let range = document.getElementById("range1");
+    let form = document.getElementById("myForm");
 
-<script>
+    let boxElem = document.querySelector(".box");
 
-let range = document.getElementById("range1");
-let form = document.getElementById("myForm");
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      let item1 = range.value;
+      let item2 = document.querySelector("input[name='check']").checked;
+      let item3 = document.querySelector("input[name='group1']:checked").value;
 
-let boxElem = document.querySelector(".box");
+      boxElem.innerHTML += "<p> Range: " + item1 + "<br/> Checked: " +  item2 + "<br/> Color: " + item3 + "</p>";
+    })
+  </script>
 
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  let item1 = range.value;
-  let item2 = document.querySelector("input[name='check']").checked;
-  let item3 = document.querySelector("input[name='group1']:checked").value;
-
-  boxElem.innerHTML += "<p> Range: " + item1 + "<br/> Checked: " +  item2 + "<br/> Color: " + item3 + "</p>";
-})
-
-</script>
 </body>
 </html>
