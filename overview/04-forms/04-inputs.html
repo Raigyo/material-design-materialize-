@@ -41,20 +41,38 @@
     <div class="row">
 
       <br><br>
-      <h5>Les inputs :</h5>
+      <h5>Inputs :</h5>
       <br><br>
       <form>
-          <!-- Input pour nom -->
+        <!-- Input for name -->
+        <div class="input-field col s6">
+          <input type="text" placeholder="Your name" />
+          <label>Name</label>
+        </div>
 
+        <!-- Input for mail -->
+        <div class="input-field col s6">
+          <input type="email" class="validate" />
+          <label>Email</label>
+          <span class="helper-text" data-error="incorrect" data-success="correct"></span>
+        </div>
 
-          <!-- Input pour mail -->
-
-
-          <!-- input pour textaera -->
-
-          <h5>Un sélectionneur de fichiers : </h5>
-          <br>
-
+        <!-- Input for textaera -->
+        <div class="input-field col s12">
+          <textarea class="materialize-textarea" data-length="10"></textarea>
+          <label>Text area</label>
+        </div>
+        <h5>File selector : </h5>
+        <br>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Files</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input type="text" class="file-path">
+          </div>
+        </div>
 
 
       </form>
@@ -63,8 +81,8 @@
 
   </div>
   <script>
-
-
+  let elems = document.querySelectorAll(".materialize-textarea");
+  M.CharacterCounter.init(elems);
 
   </script>
 </body>
