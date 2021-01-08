@@ -20,13 +20,13 @@ It is inspired from Google Material Design.
 
 ## Demos
 
-(Overview: CSS)[https://raigyo.github.io/material-design-materialize-/overview/01-css/01-typography.html]
+[Overview: CSS](https://raigyo.github.io/material-design-materialize-/overview/01-css/01-typography.html)
 
-(Overview: Components)[https://raigyo.github.io/material-design-materialize-/overview/02-components/01-buttons.html]
+[Overview: Components](https://raigyo.github.io/material-design-materialize-/overview/02-components/01-buttons.html)
 
-(Overview: Javascript)[https://raigyo.github.io/material-design-materialize-/overview/03-javascript/01-carousel.html]
+[Overview: Javascript](https://raigyo.github.io/material-design-materialize-/overview/03-javascript/01-carousel.html)
 
-(Overview: Forms)[https://raigyo.github.io/material-design-materialize-/overview/04-forms/01-autocomplete.html]
+[Overview: Forms](https://raigyo.github.io/material-design-materialize-/overview/04-forms/01-autocomplete.html)
 
 ## [Subjects covered](./overview)
 
