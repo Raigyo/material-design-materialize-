@@ -20,6 +20,8 @@ It is inspired from Google Material Design.
 
 ## Demos
 
+[Final project: showcase site](https://raigyo.github.io/material-design-materialize-/index.html)
+
 [Overview: CSS](https://raigyo.github.io/material-design-materialize-/overview/01-css/01-typography.html)
 
 [Overview: Components](https://raigyo.github.io/material-design-materialize-/overview/02-components/01-buttons.html)
@@ -74,10 +76,11 @@ It is inspired from Google Material Design.
 
 - [Material Design](https://material.io/design)
 - [Materialize CSS](https://materializecss.com/)
+- [Google Design](https://www.youtube.com/channel/UClKO7be7O9cUGL94PHnAeOA)
 - [Ziratsu/BAS-1-CSS-MATERIALIZE](https://github.com/Ziratsu/BAS-1-CSS-MATERIALIZE)
 - [Ziratsu/BAS-2-COMPOSANTS-MATERIALIZE](https://github.com/Ziratsu/BAS-2-COMPOSANTS-MATERIALIZE)
 - [Ziratsu/BAS-3-JAVASCRIPT-MATERIALIZE](https://github.com/Ziratsu/BAS-3-JAVASCRIPT-MATERIALIZE)
 - [Ziratsu/BAS-4-Formulaires-MATERIALIZE](https://github.com/Ziratsu/BAS-4-Formulaires-MATERIALIZE)
 - [Ziratsu/SiteMaterializeForm](https://github.com/Ziratsu/SiteMaterializeForm)
 - [Unsplash Source](https://source.unsplash.com/)
-- []()
+- [Materialize Tabs](https://www.freetimelearning.com/materialize-css/materialize-css-tabs.php)
